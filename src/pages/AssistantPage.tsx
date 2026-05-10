@@ -71,15 +71,14 @@ function AssistantPage() {
             <p className="text-sm uppercase tracking-[0.24em] text-slate-500">Histórico</p>
             <h3 className="mt-3 text-2xl font-semibold text-slate-950">Conversas recentes</h3>
           </div>
-          <div className="space-y-4">
+          <div className="flex gap-3 overflow-x-auto pb-2">
             {conversationOptions.map((item) => (
               <button
                 key={item.question}
                 onClick={() => handleExample(item.question, item.answer)}
-                className="flex w-full items-center justify-between rounded-3xl border border-slate-200 bg-white px-4 py-4 text-left text-sm text-slate-700 transition hover:border-brand hover:bg-brand/5"
+                className="shrink-0 rounded-full border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 shadow-sm transition hover:border-brand hover:bg-brand/5"
               >
-                <span>{item.question}</span>
-                <MessageCircle className="h-4 w-4 text-slate-500" />
+                {item.question}
               </button>
             ))}
           </div>
@@ -94,7 +93,18 @@ function AssistantPage() {
           </div>
           <div className="rounded-3xl bg-slate-50 px-4 py-2 text-sm text-slate-700">Simulação interativa</div>
         </div>
-        <div className="mt-6 space-y-4">
+        <div className="mt-6 flex gap-3 overflow-x-auto pb-2">
+          {conversationOptions.map((item) => (
+            <button
+              key={item.question}
+              onClick={() => handleExample(item.question, item.answer)}
+              className="shrink-0 rounded-full border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 shadow-sm transition hover:border-brand hover:bg-brand/5"
+            >
+              {item.question}
+            </button>
+          ))}
+        </div>
+        <div className="mt-4 space-y-4">
           {messages.map((message) => (
             <div
               key={message.id}

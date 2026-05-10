@@ -6,7 +6,7 @@ function Topbar() {
   const [open, setOpen] = useState(false)
 
   return (
-    <div className="flex flex-col gap-4 rounded-[32px] bg-white/80 p-5 shadow-panel backdrop-blur-xl md:flex-row md:items-center md:justify-between">
+    <div className="hidden flex-col gap-4 rounded-[32px] bg-white/80 p-5 shadow-panel backdrop-blur-xl md:flex md:flex-row md:items-center md:justify-between">
       <div className="flex flex-1 flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div className="relative flex-1">
           <Search className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />

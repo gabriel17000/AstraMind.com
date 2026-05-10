@@ -7,7 +7,21 @@ import { cashSeries, growthSeries, quickMetrics } from '../data/mockData'
 function DashboardPage() {
   return (
     <div className="space-y-6">
-      <div className="grid gap-6 lg:grid-cols-3">
+      <div className="rounded-[32px] bg-white p-6 shadow-panel">
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <p className="text-sm uppercase tracking-[0.32em] text-slate-500">Olá, Aurora</p>
+            <h2 className="mt-3 text-3xl font-semibold text-slate-950">Acompanhe resultados e tendências</h2>
+            <p className="mt-2 max-w-2xl text-sm text-slate-600">Uma visão rápida e elegante para as métricas mais importantes do seu negócio.</p>
+          </div>
+          <div className="inline-flex flex-wrap gap-3">
+            <button className="rounded-3xl bg-brand px-4 py-3 text-sm font-semibold text-white shadow-lg shadow-brand/20 transition hover:bg-brand-dark">Últimos 7 dias</button>
+            <button className="rounded-3xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 transition hover:bg-slate-50">Últimos 30 dias</button>
+          </div>
+        </div>
+      </div>
+
+      <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
         {quickMetrics.map((metric) => (
           <Card key={metric.title} className="group overflow-hidden">
             <div className="flex items-start justify-between gap-4">
@@ -36,7 +50,7 @@ function DashboardPage() {
               Ver histórico
             </button>
           </div>
-          <div style={{ width: '100%', height: 320 }}>
+          <div className="h-[260px] sm:h-72 w-full">
             <ResponsiveContainer>
               <AreaChart data={cashSeries} margin={{ top: 10, right: 10, left: -10, bottom: 0 }}>
                 <defs>

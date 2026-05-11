@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import Button from '../components/ui/Button'
 import Input from '../components/ui/Input'
 import Modal from '../components/ui/Modal'
-import { LogIn } from 'lucide-react'
+import { LogIn, Sparkles } from 'lucide-react'
 
 function LoginPage() {
   const navigate = useNavigate()
@@ -33,7 +33,9 @@ function LoginPage() {
       <div className="mx-auto flex max-w-6xl flex-col gap-12 rounded-[40px] border border-slate-200/80 bg-white/95 p-10 shadow-panel sm:p-14 lg:flex-row lg:items-center">
         <div className="flex-1 space-y-6">
           <div className="inline-flex items-center gap-3 rounded-3xl bg-slate-950 px-4 py-3 text-white shadow-lg shadow-slate-950/10">
-            <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-brand text-white">A</div>
+            <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-blue-600 text-white">
+              <Sparkles className="h-7 w-7" />
+            </div>
             <div>
               <p className="text-xs uppercase tracking-[0.32em] text-slate-400">AstraMind</p>
               <h2 className="text-2xl font-semibold">Seu SaaS de IA em um painel premium.</h2>

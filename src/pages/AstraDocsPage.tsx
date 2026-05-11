@@ -46,7 +46,7 @@ function AstraDocsPage() {
         <Card>
           <div className="flex items-center justify-between gap-4">
             <div>
-              <p className="text-sm uppercase tracking-[0.24em] text-slate-500">AstraDocs</p>
+              <p className="text-sm uppercase tracking-[0.24em] text-slate-700">AstraDocs</p>
               <h2 className="mt-3 text-3xl font-semibold text-slate-950">Documentos inteligentes</h2>
             </div>
             <Button onClick={() => setUploadOpen(true)}>
@@ -55,7 +55,7 @@ function AstraDocsPage() {
           </div>
           <div className="mt-6 grid gap-4 sm:grid-cols-2">
             <div className="rounded-3xl bg-slate-50 p-5">
-              <p className="text-sm uppercase tracking-[0.24em] text-slate-500">Status</p>
+              <p className="text-sm uppercase tracking-[0.24em] text-slate-700">Status</p>
               <p className="mt-3 text-3xl font-semibold text-slate-950">7 documentos</p>
               <div className="mt-4 flex flex-wrap gap-2">
                 <Badge variant="success">Analise concluída</Badge>
@@ -64,25 +64,25 @@ function AstraDocsPage() {
               </div>
             </div>
             <div className="rounded-3xl bg-slate-50 p-5">
-              <p className="text-sm uppercase tracking-[0.24em] text-slate-500">Insights</p>
+              <p className="text-sm uppercase tracking-[0.24em] text-slate-700">Insights</p>
               <p className="mt-3 text-xl font-semibold text-slate-950">Resumo gerado automaticamente</p>
               <p className="mt-3 text-sm text-slate-600">Use o assistente para visualizar pontos-chave, inconsistências e relatórios rápidos.</p>
             </div>
           </div>
         </Card>
 
-        <Card className="flex flex-col justify-between gap-6 bg-brand text-white">
+        <Card className="flex flex-col justify-between gap-6 bg-brand text-slate-900">
           <div>
-            <p className="text-sm uppercase tracking-[0.24em] text-blue-100/80">Sugestão rápida</p>
-            <h3 className="mt-3 text-3xl font-semibold">Aprimore a governança documental</h3>
-            <p className="mt-4 text-sm text-blue-100/90">A integração entre AstraDocs e AstraFinance permite relatórios mais completos e decisões mais rápidas.</p>
+            <p className="text-sm uppercase tracking-[0.24em] text-slate-700">Sugestão rápida</p>
+            <h3 className="mt-3 text-3xl font-semibold text-slate-900">Aprimore a governança documental</h3>
+            <p className="mt-4 text-sm text-slate-700">A integração entre AstraDocs e AstraFinance permite relatórios mais completos e decisões mais rápidas.</p>
           </div>
           <div className="rounded-[28px] bg-white/10 p-5">
-            <div className="flex items-center gap-3 text-sm font-semibold text-white">
+            <div className="flex items-center gap-3 text-sm font-semibold text-slate-900">
               <Sparkles className="h-5 w-5" />
               Analise automática ativada
             </div>
-            <p className="mt-3 text-sm text-blue-100/80">Simule upload de documentos e explore respostas instantâneas no painel.</p>
+            <p className="mt-3 text-sm text-slate-700">Simule upload de documentos e explore respostas instantâneas no painel.</p>
           </div>
         </Card>
       </div>
@@ -121,7 +121,7 @@ function AstraDocsPage() {
           <Card>
             <div className="mb-5 flex items-center justify-between gap-4">
               <div>
-                <p className="text-sm uppercase tracking-[0.24em] text-slate-500">Arquivos recentes</p>
+              <p className="text-sm uppercase tracking-[0.24em] text-slate-700">Arquivos recentes</p>
                 <h3 className="mt-3 text-2xl font-semibold text-slate-950">Biblioteca de documentos</h3>
               </div>
               <span className="rounded-3xl bg-slate-100 px-3 py-2 text-sm font-semibold text-slate-700">{filteredDocuments.length} arquivos</span>
@@ -136,7 +136,7 @@ function AstraDocsPage() {
                 >
                   <div>
                     <p className="text-lg font-semibold text-slate-950">{doc.name}</p>
-                    <p className="mt-2 text-sm text-slate-600">{doc.category} • {doc.size}</p>
+                    <p className="mt-2 text-sm text-slate-700">{doc.category} • {doc.size}</p>
                   </div>
                   <div className="flex flex-wrap items-center gap-3">
                     <Badge variant={doc.status === 'Concluído' ? 'success' : doc.status === 'Revisão' ? 'warning' : 'neutral'}>{doc.status}</Badge>
@@ -162,7 +162,7 @@ function AstraDocsPage() {
           <Card>
             <div className="flex items-center justify-between gap-4">
               <div>
-                <p className="text-sm uppercase tracking-[0.24em] text-slate-500">Ações</p>
+                <p className="text-sm uppercase tracking-[0.24em] text-slate-700">Ações</p>
                 <h3 className="mt-3 text-2xl font-semibold text-slate-950">Simular análise</h3>
               </div>
               <span className="rounded-3xl bg-slate-100 px-3 py-2 text-sm font-semibold text-slate-700">Documento ativo</span>
@@ -180,13 +180,13 @@ function AstraDocsPage() {
 
         <Card className="space-y-6">
           <div>
-            <p className="text-sm uppercase tracking-[0.24em] text-slate-500">Documento selecionado</p>
+            <p className="text-sm uppercase tracking-[0.24em] text-slate-700">Documento selecionado</p>
             <h3 className="mt-3 text-2xl font-semibold text-slate-950">{selectedDoc.name}</h3>
           </div>
           <div className="grid gap-4 rounded-[28px] border border-slate-200 bg-slate-50 p-6">
             <div className="flex items-center justify-between gap-3">
               <div>
-                <p className="text-sm text-slate-500">Categoria</p>
+                <p className="text-sm text-slate-700">Categoria</p>
                 <p className="mt-2 text-lg font-semibold text-slate-950">{selectedDoc.category}</p>
               </div>
               <Badge variant={selectedDoc.status === 'Concluído' ? 'success' : 'warning'}>{selectedDoc.status}</Badge>
@@ -198,7 +198,7 @@ function AstraDocsPage() {
           </div>
           <div className="grid gap-4 rounded-[28px] bg-slate-950/5 p-6 text-slate-700">
             <div className="flex items-center justify-between">
-              <p className="text-sm uppercase tracking-[0.24em] text-slate-500">Resumo</p>
+              <p className="text-sm uppercase tracking-[0.24em] text-slate-700">Resumo</p>
               <span className="rounded-full bg-slate-200 px-3 py-1 text-xs font-semibold text-slate-800">35 sec</span>
             </div>
             <div className="rounded-3xl bg-white p-5 text-sm text-slate-700 shadow-sm">
@@ -209,54 +209,63 @@ function AstraDocsPage() {
       </div>
 
       <AnimatePresence>
-        <Modal
-          open={summaryOpen}
-          title="Resumo gerado pela IA"
-          description="Uma síntese automática foi preparada para você."
-          onClose={() => setSummaryOpen(false)}
-        >
-          <div className="space-y-4 text-slate-700">
-            <p>O documento apresenta destaque no fluxo de receita recorrente e mostra margem operacional saudável, porém com espaço para otimização de custos variáveis.</p>
-            <div className="rounded-3xl bg-slate-50 p-4">
-              <p className="font-semibold">Resultado</p>
-              <p className="text-sm text-slate-600">Documento analisado com sucesso. Resumo gerado pela IA.</p>
+        {summaryOpen && (
+          <Modal
+            key="summary-modal"
+            open={summaryOpen}
+            title="Resumo gerado pela IA"
+            description="Uma síntese automática foi preparada para você."
+            onClose={() => setSummaryOpen(false)}
+          >
+            <div className="space-y-4 text-slate-700">
+              <p>O documento apresenta destaque no fluxo de receita recorrente e mostra margem operacional saudável, porém com espaço para otimização de custos variáveis.</p>
+              <div className="rounded-3xl bg-slate-50 p-4">
+                <p className="font-semibold">Resultado</p>
+                <p className="text-sm text-slate-600">Documento analisado com sucesso. Resumo gerado pela IA.</p>
+              </div>
             </div>
-          </div>
-        </Modal>
+          </Modal>
+        )}
 
-        <Modal
-          open={analysisOpen}
-          title="Análise concluída"
-          description="O sistema encontrou pontos importantes no documento selecionado."
-          onClose={() => setAnalysisOpen(false)}
-        >
-          <div className="space-y-4 text-slate-700">
-            <p>Possíveis inconsistências encontradas em linhas de custo. Recomenda-se validar categorias e prazos de pagamento.</p>
-            <ul className="list-inside list-disc space-y-2 text-sm text-slate-600">
-              <li>Variância de 9% em despesas operacionais.</li>
-              <li>Documentos relacionados ao RH têm dados incompletos.</li>
-              <li>Fluxo de caixa simulado indica saldo positivo nos próximos 30 dias.</li>
-            </ul>
-          </div>
-        </Modal>
+        {analysisOpen && (
+          <Modal
+            key="analysis-modal"
+            open={analysisOpen}
+            title="Análise concluída"
+            description="O sistema encontrou pontos importantes no documento selecionado."
+            onClose={() => setAnalysisOpen(false)}
+          >
+            <div className="space-y-4 text-slate-700">
+              <p>Possíveis inconsistências encontradas em linhas de custo. Recomenda-se validar categorias e prazos de pagamento.</p>
+              <ul className="list-inside list-disc space-y-2 text-sm text-slate-600">
+                <li>Variância de 9% em despesas operacionais.</li>
+                <li>Documentos relacionados ao RH têm dados incompletos.</li>
+                <li>Fluxo de caixa simulado indica saldo positivo nos próximos 30 dias.</li>
+              </ul>
+            </div>
+          </Modal>
+        )}
 
-        <Modal
-          open={uploadOpen}
-          title="Upload de documento"
-          description="Arraste e solte ou selecione um arquivo para simular upload." 
-          onClose={() => setUploadOpen(false)}
-        >
-          <div className="space-y-4 text-slate-700">
-            <div className="rounded-[28px] border border-dashed border-slate-300 bg-slate-50 p-10 text-center text-slate-500">
-              <p className="text-lg font-semibold text-slate-900">Arraste o arquivo aqui</p>
-              <p className="mt-2 text-sm">PDF, DOCX, XLSX ou imagens. Este é um protótipo visual.</p>
+        {uploadOpen && (
+          <Modal
+            key="upload-modal"
+            open={uploadOpen}
+            title="Upload de documento"
+            description="Arraste e solte ou selecione um arquivo para simular upload." 
+            onClose={() => setUploadOpen(false)}
+          >
+            <div className="space-y-4 text-slate-700">
+              <div className="rounded-[28px] border border-dashed border-slate-300 bg-slate-50 p-10 text-center text-slate-500">
+                <p className="text-lg font-semibold text-slate-900">Arraste o arquivo aqui</p>
+                <p className="mt-2 text-sm">PDF, DOCX, XLSX ou imagens. Este é um protótipo visual.</p>
+              </div>
+              <div className="flex flex-col gap-3 sm:flex-row sm:justify-between">
+                <Button onClick={() => setUploadOpen(false)}>Selecionar arquivo</Button>
+                <Button variant="secondary" onClick={() => setUploadOpen(false)}>Cancelar</Button>
+              </div>
             </div>
-            <div className="flex flex-col gap-3 sm:flex-row sm:justify-between">
-              <Button onClick={() => setUploadOpen(false)}>Selecionar arquivo</Button>
-              <Button variant="secondary" onClick={() => setUploadOpen(false)}>Cancelar</Button>
-            </div>
-          </div>
-        </Modal>
+          </Modal>
+        )}
       </AnimatePresence>
     </div>
   )

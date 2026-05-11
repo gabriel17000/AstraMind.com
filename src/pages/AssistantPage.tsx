@@ -50,7 +50,7 @@ function AssistantPage() {
         <Card>
           <div className="flex items-center justify-between gap-4">
             <div>
-              <p className="text-sm uppercase tracking-[0.24em] text-slate-500">Assistente IA</p>
+              <p className="text-sm uppercase tracking-[0.24em] text-slate-700">Assistente IA</p>
               <h2 className="mt-3 text-3xl font-semibold text-slate-950">Converse com o AstraMind</h2>
             </div>
             <Button variant="secondary" onClick={() => setDraft(recommended.question)}>
@@ -60,7 +60,7 @@ function AssistantPage() {
           <div className="mt-6 flex items-center justify-between rounded-[32px] border border-slate-200 bg-slate-50 p-5">
             <div>
               <p className="text-sm text-slate-700">Pergunte sobre vendas, custos ou performance.</p>
-              <p className="mt-2 text-sm text-slate-500">O assistente responde com dados simulados e insights rápidos.</p>
+              <p className="mt-2 text-sm text-slate-600">O assistente responde com dados simulados e insights rápidos.</p>
             </div>
             <Sparkles className="h-8 w-8 text-brand" />
           </div>
@@ -68,7 +68,7 @@ function AssistantPage() {
 
         <Card className="space-y-5">
           <div>
-            <p className="text-sm uppercase tracking-[0.24em] text-slate-500">Histórico</p>
+            <p className="text-sm uppercase tracking-[0.24em] text-slate-700">Histórico</p>
             <h3 className="mt-3 text-2xl font-semibold text-slate-950">Conversas recentes</h3>
           </div>
           <div className="flex gap-3 overflow-x-auto pb-2">
@@ -88,7 +88,7 @@ function AssistantPage() {
       <Card className="rounded-[32px]">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
           <div>
-            <p className="text-sm uppercase tracking-[0.24em] text-slate-500">Chat</p>
+            <p className="text-sm uppercase tracking-[0.24em] text-slate-700">Chat</p>
             <h3 className="mt-3 text-2xl font-semibold text-slate-950">Conversa de negócios</h3>
           </div>
           <div className="rounded-3xl bg-slate-50 px-4 py-2 text-sm text-slate-700">Simulação interativa</div>

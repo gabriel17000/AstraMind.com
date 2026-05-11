@@ -24,7 +24,7 @@ function AstraFinancePage() {
         <Card>
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div>
-              <p className="text-sm uppercase tracking-[0.24em] text-slate-500">AstraFinance</p>
+              <p className="text-sm uppercase tracking-[0.24em] text-slate-700">AstraFinance</p>
               <h2 className="mt-3 text-3xl font-semibold text-slate-950">Gestão financeira avançada</h2>
             </div>
             <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:justify-end">
@@ -47,7 +47,7 @@ function AstraFinancePage() {
               { title: 'Meta mensal', value: 'R$ 950K', delta: '83%' },
             ].map((metric) => (
               <div key={metric.title} className="rounded-3xl bg-slate-50 p-6">
-                <p className="text-sm uppercase tracking-[0.24em] text-slate-500">{metric.title}</p>
+                <p className="text-sm uppercase tracking-[0.24em] text-slate-700">{metric.title}</p>
                 <p className="mt-3 text-3xl font-semibold text-slate-950">{metric.value}</p>
                 <p className="mt-2 text-sm text-slate-600">{metric.delta}</p>
               </div>
@@ -55,15 +55,15 @@ function AstraFinancePage() {
           </div>
         </Card>
 
-        <Card className="rounded-[32px] bg-slate-950 text-white">
+        <Card className="rounded-[32px] bg-slate-950 text-slate-900">
           <div className="space-y-4">
-            <p className="text-sm uppercase tracking-[0.24em] text-slate-400">Indicador</p>
-            <h3 className="text-3xl font-semibold">Crescimento financeiro sólido</h3>
-            <p className="text-sm text-slate-300">Foco em aumentar margem e reduzir despesas fixas com uma visão estratégica integrada.</p>
+            <p className="text-sm uppercase tracking-[0.24em] text-slate-700">Indicador</p>
+            <h3 className="text-3xl font-semibold text-slate-900">Crescimento financeiro sólido</h3>
+            <p className="text-sm text-slate-700">Foco em aumentar margem e reduzir despesas fixas com uma visão estratégica integrada.</p>
             <div className="rounded-[28px] bg-white/10 p-5">
-              <div className="flex items-center justify-between gap-4 text-sm text-slate-200">
+              <div className="flex items-center justify-between gap-4 text-sm text-slate-900 font-semibold">
                 <span>Taxa de conversão de receita</span>
-                <span className="font-semibold">14.2%</span>
+                <span>14.2%</span>
               </div>
               <div className="mt-4 h-4 overflow-hidden rounded-full bg-slate-800">
                 <div className="h-full w-[70%] rounded-full bg-brand" />
@@ -100,7 +100,7 @@ function AstraFinancePage() {
           <div className="grid gap-4">
             <div className="flex items-center justify-between gap-4">
               <div>
-                <p className="text-sm uppercase tracking-[0.24em] text-slate-500">Resumo</p>
+                <p className="text-sm uppercase tracking-[0.24em] text-slate-700">Resumo</p>
                 <h3 className="mt-3 text-2xl font-semibold text-slate-950">Metas financeiras</h3>
               </div>
               <Button variant="ghost">Ver detalhes</Button>
@@ -108,7 +108,7 @@ function AstraFinancePage() {
             <div className="rounded-3xl bg-slate-50 p-5">
               <div className="flex items-center justify-between gap-3">
                 <div>
-                  <p className="text-sm text-slate-500">Meta atingida</p>
+                  <p className="text-sm text-slate-600">Meta atingida</p>
                   <p className="mt-2 text-3xl font-semibold text-slate-950">83%</p>
                 </div>
                 <Badge variant="success">No caminho</Badge>
@@ -117,7 +117,7 @@ function AstraFinancePage() {
                 <div className="h-full w-[83%] rounded-full bg-brand" />
               </div>
             </div>
-            <div className="rounded-3xl bg-slate-50 p-5 text-sm text-slate-600">
+            <div className="rounded-3xl bg-slate-50 p-5 text-sm text-slate-700">
               <p>Use as projeções para ajustar o orçamento e priorizar investimentos em áreas de alto crescimento.</p>
             </div>
           </div>
@@ -153,7 +153,7 @@ function AstraFinancePage() {
                 <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                   <div>
                     <p className="text-sm font-semibold text-slate-950">{item.label}</p>
-                    <p className="text-sm text-slate-500">{item.category} • {item.date}</p>
+                    <p className="text-sm text-slate-600">{item.category} • {item.date}</p>
                   </div>
                   <div className={`rounded-3xl px-3 py-2 text-sm font-semibold ${item.status === 'Receita' ? 'bg-emerald-50 text-emerald-700' : 'bg-rose-50 text-rose-700'}`}>{item.amount}</div>
                 </div>
@@ -187,7 +187,7 @@ function AstraFinancePage() {
         <Card>
           <div className="space-y-5">
             <div>
-              <p className="text-sm uppercase tracking-[0.24em] text-slate-500">Painel de comparação</p>
+              <p className="text-sm uppercase tracking-[0.24em] text-slate-700">Painel de comparação</p>
               <h3 className="mt-3 text-2xl font-semibold text-slate-950">Receitas x Despesas</h3>
             </div>
             <div className="h-72">

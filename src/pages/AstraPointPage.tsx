@@ -43,22 +43,22 @@ function AstraPointPage() {
         <Card>
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div>
-              <p className="text-sm uppercase tracking-[0.24em] text-slate-500">AstraPoint</p>
+              <p className="text-sm uppercase tracking-[0.24em] text-slate-700">AstraPoint</p>
               <h2 className="mt-3 text-3xl font-semibold text-slate-950">Controle de ponto inteligente</h2>
             </div>
             <div className="rounded-3xl bg-slate-50 px-4 py-3 text-sm font-semibold text-slate-700">Relógio em tempo real: {now.toLocaleTimeString()}</div>
           </div>
           <div className="mt-6 grid gap-4 sm:grid-cols-3">
             <div className="rounded-3xl bg-slate-50 p-5">
-              <p className="text-sm uppercase tracking-[0.24em] text-slate-500">Presente</p>
+              <p className="text-sm uppercase tracking-[0.24em] text-slate-700">Presente</p>
               <p className="mt-3 text-3xl font-semibold text-slate-950">{presentCount}</p>
             </div>
             <div className="rounded-3xl bg-slate-50 p-5">
-              <p className="text-sm uppercase tracking-[0.24em] text-slate-500">Atrasos</p>
+              <p className="text-sm uppercase tracking-[0.24em] text-slate-700">Atrasos</p>
               <p className="mt-3 text-3xl font-semibold text-slate-950">1</p>
             </div>
             <div className="rounded-3xl bg-slate-50 p-5">
-              <p className="text-sm uppercase tracking-[0.24em] text-slate-500">Produtividade</p>
+              <p className="text-sm uppercase tracking-[0.24em] text-slate-700">Produtividade</p>
               <p className="mt-3 text-3xl font-semibold text-slate-950">84%</p>
             </div>
           </div>
@@ -67,7 +67,7 @@ function AstraPointPage() {
         <Card className="space-y-5">
           <div className="flex items-center justify-between gap-4">
             <div>
-              <p className="text-sm uppercase tracking-[0.24em] text-slate-500">Resumo rápido</p>
+              <p className="text-sm uppercase tracking-[0.24em] text-slate-700">Resumo rápido</p>
               <h3 className="mt-3 text-2xl font-semibold text-slate-950">Status de presença</h3>
             </div>
             <Button variant="secondary" onClick={() => setReportOpen(true)}>
@@ -96,7 +96,7 @@ function AstraPointPage() {
         <Card>
           <div className="flex items-center justify-between gap-4">
             <div>
-              <p className="text-sm uppercase tracking-[0.24em] text-slate-500">Painel de ações</p>
+              <p className="text-sm uppercase tracking-[0.24em] text-slate-700">Painel de ações</p>
               <h3 className="mt-3 text-2xl font-semibold text-slate-950">Registros rápidos</h3>
             </div>
             <div className="flex flex-wrap gap-3">
@@ -106,11 +106,11 @@ function AstraPointPage() {
           </div>
           <div className="mt-6 grid gap-4 sm:grid-cols-2">
             <div className="rounded-3xl bg-slate-50 p-5">
-              <p className="text-sm uppercase tracking-[0.24em] text-slate-500">Última atividade</p>
+              <p className="text-sm uppercase tracking-[0.24em] text-slate-700">Última atividade</p>
               <p className="mt-3 text-lg font-semibold text-slate-950">{activityMessage}</p>
             </div>
             <div className="rounded-3xl bg-slate-50 p-5">
-              <p className="text-sm uppercase tracking-[0.24em] text-slate-500">Filtro</p>
+              <p className="text-sm uppercase tracking-[0.24em] text-slate-700">Filtro</p>
               <div className="mt-3 flex flex-wrap gap-2">
                 {['Todos', 'Presente', 'Ausente', 'Atrasado', 'Em pausa'].map((status) => (
                   <button
@@ -133,7 +133,7 @@ function AstraPointPage() {
         <Card>
           <div className="flex items-center justify-between gap-4 flex-wrap">
             <div>
-              <p className="text-sm uppercase tracking-[0.24em] text-slate-500">Produtividade semanal</p>
+            <p className="text-sm uppercase tracking-[0.24em] text-slate-700">Produtividade semanal</p>
               <h3 className="mt-3 text-2xl font-semibold text-slate-950">Tendência operacional</h3>
             </div>
             <span className="rounded-3xl bg-slate-100 px-3 py-2 text-sm font-semibold text-slate-700">Detalhado</span>
@@ -155,7 +155,7 @@ function AstraPointPage() {
       <Card>
         <div className="mb-5 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div>
-            <p className="text-sm uppercase tracking-[0.24em] text-slate-500">Tabela de funcionários</p>
+            <p className="text-sm uppercase tracking-[0.24em] text-slate-700">Tabela de funcionários</p>
             <h3 className="mt-3 text-2xl font-semibold text-slate-950">Visão geral do time</h3>
           </div>
           <Button variant="secondary" onClick={() => setReportOpen(true)} className="text-slate-900">
@@ -168,7 +168,7 @@ function AstraPointPage() {
               <div className="flex items-start justify-between gap-3">
                 <div>
                   <p className="text-base font-semibold text-slate-950">{person.name}</p>
-                  <p className="mt-2 text-sm text-slate-500">{person.hours} • {person.productivity}</p>
+                  <p className="mt-2 text-sm text-slate-600">{person.hours} • {person.productivity}</p>
                 </div>
                 <Badge variant={statusMap[person.status as keyof typeof statusMap]}>{person.status}</Badge>
               </div>
@@ -201,15 +201,15 @@ function AstraPointPage() {
         </div>
       </Card>
 
-      <Card className="rounded-[32px] bg-slate-950 text-white">
+      <Card className="rounded-[32px] bg-slate-950 text-slate-900">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <div>
-            <p className="text-sm uppercase tracking-[0.24em] text-slate-400">Notificação do RH</p>
-            <h3 className="mt-3 text-2xl font-semibold">Alerta de eficiência</h3>
+            <p className="text-sm uppercase tracking-[0.24em] text-slate-700">Notificação do RH</p>
+            <h3 className="mt-3 text-2xl font-semibold text-slate-900">Alerta de eficiência</h3>
           </div>
           <Badge variant="warning">Revisar</Badge>
         </div>
-        <div className="mt-4 rounded-[28px] bg-white/10 p-5 text-slate-200">
+        <div className="mt-4 rounded-[28px] bg-white/10 p-5 text-slate-700">
           <p>O fluxo de ponto indica que 29% da equipe terá horário estendido na próxima semana. Considere compartilhar relatórios com líderes antes do fechamento do mês.</p>
         </div>
       </Card>
@@ -222,7 +222,7 @@ function AstraPointPage() {
                 <p className="text-sm uppercase tracking-[0.24em] text-slate-500">Relatório fictício</p>
                 <h3 className="mt-3 text-2xl font-semibold text-slate-950">Relatório de Ponto</h3>
               </div>
-              <button className="text-slate-400 transition hover:text-slate-900" onClick={() => setReportOpen(false)}>
+              <button className="text-slate-500 transition hover:text-slate-900" onClick={() => setReportOpen(false)}>
                 Fechar
               </button>
             </div>

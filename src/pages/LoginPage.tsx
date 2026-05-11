@@ -32,7 +32,7 @@ function LoginPage() {
     <div className="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(59,130,246,0.18),_transparent_35%),linear-gradient(180deg,_#f8fbff,_#f5f7fb)] px-4 py-10 sm:px-6 lg:px-8">
       <div className="mx-auto flex max-w-6xl flex-col gap-12 rounded-[40px] border border-slate-200/80 bg-white/95 p-10 shadow-panel sm:p-14 lg:flex-row lg:items-center">
         <div className="flex-1 space-y-6">
-          <div className="inline-flex items-center gap-3 rounded-3xl bg-slate-950 px-4 py-3 text-white shadow-lg shadow-slate-950/10">
+          <div className="inline-flex items-center gap-3 rounded-3xl bg-slate-950 px-4 py-3 text-slate-300 shadow-lg shadow-slate-950/10">
             <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-blue-600 text-white">
               <Sparkles className="h-7 w-7" />
             </div>
@@ -64,26 +64,26 @@ function LoginPage() {
                 </ul>
               </div>
               <div className="rounded-3xl bg-brand text-white p-5 shadow-lg">
-                <p className="text-sm uppercase tracking-[0.3em] text-blue-100/90">Design proposital</p>
+                <p className="text-sm uppercase tracking-[0.3em] text-slate-200">Design proposital</p>
                 <p className="mt-4 text-lg font-semibold">Layouts, animações e UX idealizados para SaaS premium.</p>
               </div>
             </div>
           </div>
         </div>
 
-        <motion.div className="w-full max-w-md rounded-[32px] bg-slate-950 px-8 py-10 text-white shadow-2xl shadow-slate-950/20 sm:px-10">
+        <motion.div className="w-full max-w-md rounded-[32px] bg-slate-950 px-8 py-10 text-slate-300 shadow-2xl shadow-slate-950/20 sm:px-10">
           <div className="mb-8">
             <p className="text-xs uppercase tracking-[0.32em] text-slate-400">Login</p>
-            <h3 className="mt-4 text-3xl font-semibold">Entre na sua conta</h3>
+            <h3 className="mt-4 text-3xl font-semibold text-slate-100">Entre na sua conta</h3>
           </div>
           <form onSubmit={handleSubmit} className="space-y-5">
             <Input label="Email" type="email" placeholder="Digite seu email" required />
             <Input label="Senha" type="password" placeholder="Digite sua senha" required />
             <div className="flex items-center justify-between text-sm text-slate-300">
-              <button type="button" onClick={() => setForgotOpen(true)} className="hover:text-white">
+              <button type="button" onClick={() => setForgotOpen(true)} className="hover:text-slate-200">
                 Esqueceu a senha?
               </button>
-              <Link to="/signup" className="hover:text-white">
+              <Link to="/signup" className="hover:text-slate-200">
                 Cadastrar-se
               </Link>
             </div>

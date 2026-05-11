@@ -26,14 +26,14 @@ function DashboardPage() {
           <Card key={metric.title} className="group overflow-hidden">
             <div className="flex items-start justify-between gap-4">
               <div>
-                <p className="text-sm font-medium uppercase tracking-[0.24em] text-slate-500">{metric.title}</p>
+                <p className="text-sm font-medium uppercase tracking-[0.24em] text-slate-700">{metric.title}</p>
                 <p className="mt-3 text-3xl font-semibold text-slate-950">{metric.value}</p>
               </div>
               <div className="rounded-3xl bg-slate-50 px-3 py-2 text-sm font-semibold text-slate-700">{metric.delta}</div>
             </div>
-            <div className="mt-6 flex items-center justify-between text-slate-500">
-              <span className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.25em]">Visão geral</span>
-              <ArrowUpRight className="h-4 w-4" />
+            <div className="mt-6 flex items-center justify-between text-slate-600">
+              <span className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.25em] text-slate-500">Visão geral</span>
+              <ArrowUpRight className="h-4 w-4 text-slate-500" />
             </div>
           </Card>
         ))}
@@ -43,7 +43,7 @@ function DashboardPage() {
         <Card>
           <div className="mb-5 flex items-center justify-between gap-4">
             <div>
-              <p className="text-sm uppercase tracking-[0.24em] text-slate-500">Receita vs despesas</p>
+              <p className="text-sm uppercase tracking-[0.24em] text-slate-700">Receita vs despesas</p>
               <h2 className="mt-3 text-2xl font-semibold text-slate-950">Tendência do mês</h2>
             </div>
             <button className="inline-flex items-center gap-2 rounded-3xl border border-slate-200 px-4 py-2 text-sm text-slate-700 transition hover:border-brand hover:text-brand">
@@ -76,16 +76,16 @@ function DashboardPage() {
 
         <Card className="space-y-6">
           <div>
-            <p className="text-sm uppercase tracking-[0.24em] text-slate-500">Painel rápido</p>
+            <p className="text-sm uppercase tracking-[0.24em] text-slate-700">Painel rápido</p>
             <h3 className="mt-3 text-2xl font-semibold text-slate-950">Ações prioritárias</h3>
           </div>
           <div className="grid gap-4">
             <div className="rounded-3xl bg-slate-50 p-5">
-              <p className="text-sm text-slate-500">Nova meta</p>
+              <p className="text-sm text-slate-600">Nova meta</p>
               <p className="mt-3 text-xl font-semibold text-slate-950">Reunião com equipe de vendas às 16h</p>
             </div>
             <div className="rounded-3xl border border-slate-200 p-5">
-              <p className="text-sm text-slate-500">Atividade recente</p>
+              <p className="text-sm text-slate-600">Atividade recente</p>
               <div className="mt-4 space-y-3 text-sm text-slate-700">
                 <p className="font-semibold">Atualização de relatório financeiro concluída</p>
                 <p>Dados sincronizados com o módulo AstraFinance.</p>
@@ -99,7 +99,7 @@ function DashboardPage() {
         <Card>
           <div className="flex items-center justify-between gap-4">
             <div>
-              <p className="text-sm uppercase tracking-[0.24em] text-slate-500">Performance</p>
+              <p className="text-sm uppercase tracking-[0.24em] text-slate-700">Performance</p>
               <h3 className="mt-3 text-2xl font-semibold text-slate-950">Produtividade</h3>
             </div>
             <div className="rounded-3xl bg-brand/10 px-3 py-2 text-sm font-semibold text-brand">+14%</div>
@@ -120,7 +120,7 @@ function DashboardPage() {
         <Card>
           <div className="flex items-center justify-between gap-4">
             <div>
-              <p className="text-sm uppercase tracking-[0.24em] text-slate-500">Equipe</p>
+              <p className="text-sm uppercase tracking-[0.24em] text-slate-700">Equipe</p>
               <h3 className="mt-3 text-2xl font-semibold text-slate-950">Colaborações</h3>
             </div>
             <div className="rounded-3xl bg-slate-100 px-3 py-2 text-sm font-semibold text-slate-700">4 novos</div>
@@ -134,7 +134,7 @@ function DashboardPage() {
         <Card className="space-y-5">
           <div className="flex items-center justify-between gap-4">
             <div>
-              <p className="text-sm uppercase tracking-[0.24em] text-slate-500">Módulos</p>
+              <p className="text-sm uppercase tracking-[0.24em] text-slate-700">Módulos</p>
               <h3 className="mt-3 text-2xl font-semibold text-slate-950">Acesso rápido</h3>
             </div>
           </div>
